@@ -1,0 +1,249 @@
+large_core_schedule io
+~~~
+begin
+median has **Core 00 Core_Total  Finished:   insts:173238      cycles:6568573    (65685720) seconds:22    -- 0.03 IPC (0.03 IPC) --  N/A  KHz (7.87 KHz)
+memBW has **Core 00 Core_Total  Finished:   insts:3000000     cycles:147532367  (1475323660) seconds:457   -- 0.02 IPC (0.02 IPC) --  N/A  KHz (6.56 KHz)
+memcpy has **Core 00 Core_Total  Finished:   insts:240279      cycles:10267317   (102673160) seconds:34    -- 0.02 IPC (0.02 IPC) --  N/A  KHz (7.07 KHz)
+memlatency has **Core 00 Core_Total  Finished:   insts:3000000     cycles:146466075  (1464660740) seconds:445   -- 0.02 IPC (0.02 IPC) --  N/A  KHz (6.74 KHz)
+mergesort has **Core 00 Core_Total  Finished:   insts:415239      cycles:20558757   (205587560) seconds:64    -- 0.02 IPC (0.02 IPC) --  N/A  KHz (6.49 KHz)
+multiply has **Core 00 Core_Total  Finished:   insts:182001      cycles:8056185    (80561840) seconds:26    -- 0.02 IPC (0.02 IPC) --  N/A  KHz (7.00 KHz)
+qsort has **Core 00 Core_Total  Finished:   insts:499249      cycles:28468011   (284680100) seconds:88    -- 0.02 IPC (0.02 IPC) --  N/A  KHz (5.67 KHz)
+rsort has **Core 00 Core_Total  Finished:   insts:691721      cycles:34134785   (341347840) seconds:107   -- 0.02 IPC (0.02 IPC) --  N/A  KHz (6.46 KHz)
+spmv has **Core 00 Core_Total  Finished:   insts:253136      cycles:10704930   (107049290) seconds:35    -- 0.02 IPC (0.02 IPC) --  N/A  KHz (7.23 KHz)
+st-matmul has **Core 00 Core_Total  Finished:   insts:256449      cycles:13327361   (133273600) seconds:42    -- 0.02 IPC (0.02 IPC) --  N/A  KHz (6.11 KHz)
+st-vvadd has **Core 00 Core_Total  Finished:   insts:262630      cycles:11974500   (119744990) seconds:39    -- 0.02 IPC (0.02 IPC) --  N/A  KHz (6.73 KHz)
+towers has **Core 00 Core_Total  Finished:   insts:161709      cycles:5739535    (57395340) seconds:19    -- 0.03 IPC (0.03 IPC) --  N/A  KHz (8.51 KHz)
+vvadd has **Core 00 Core_Total  Finished:   insts:160408      cycles:5729966    (57299650) seconds:20    -- 0.03 IPC (0.03 IPC) --  N/A  KHz (8.02 KHz)
+
+
+
+large_core_schedule ooo
+~~~
+begin
+median has **Core 00 Core_Total  Finished:   insts:173238      cycles:4416184    (44161830) seconds:17    -- 0.04 IPC (0.04 IPC) --  N/A  KHz (10.19 KHz)
+src/macsim.cc:620: (I=173238  C=44161831):  finalize simulation
+src/macsim.cc:624: (I=173238  C=44161831):  elapsed time:17.1 seconds
+
+memBW has **Core 00 Core_Total  Finished:   insts:3000000     cycles:79919145   (799191440) seconds:360   -- 0.04 IPC (0.04 IPC) --  N/A  KHz (8.33 KHz)
+src/macsim.cc:620: (I=3000000  C=799191441):  finalize simulation
+src/macsim.cc:624: (I=3000000  C=799191441):  elapsed time:360.9 seconds
+
+memcpy has **Core 00 Core_Total  Finished:   insts:240279      cycles:6195092    (61950910) seconds:24    -- 0.04 IPC (0.04 IPC) --  N/A  KHz (10.01 KHz)
+src/macsim.cc:620: (I=240279  C=61950911):  finalize simulation
+src/macsim.cc:624: (I=240279  C=61950911):  elapsed time:23.6 seconds
+
+memlatency has **Core 00 Core_Total  Finished:   insts:3000000     cycles:45046058   (450460570) seconds:186   -- 0.07 IPC (0.07 IPC) --  N/A  KHz (16.13 KHz)
+src/macsim.cc:620: (I=3000000  C=450460571):  finalize simulation
+src/macsrob_large_size 256im.cc:624: (I=3000000  C=450460571):  elapsed time:185.6 seconds
+
+mergesort has **Core 00 Core_Total  Finished:   insts:415239      cycles:12268258   (122682570) seconds:43    -- 0.03 IPC (0.03 IPC) --  N/A  KHz (9.66 KHz)
+src/macsim.cc:620: (I=415239  C=122682571):  finalize simulation
+src/macsim.cc:624: (I=415239  C=122682571):  elapsed time:43.2 seconds
+
+multiply has **Core 00 Core_Total  Finished:   insts:182001      cycles:5564737    (55647360) seconds:20    -- 0.03 IPC (0.03 IPC) --  N/A  KHz (9.10 KHz)
+src/macsim.cc:620: (I=182001  C=55647361):  finalize simulation
+src/macsim.cc:624: (I=182001  C=55647361):  elapsed time:20.4 seconds
+
+qsort has **Core 00 Core_Total  Finished:   insts:499249      cycles:17765300   (177652990) seconds:61    -- 0.03 IPC (0.03 IPC) --  N/A  KHz (8.18 KHz)
+src/macsim.cc:620: (I=499249  C=177652991):  finalize simulation
+src/macsim.cc:624: (I=499249  C=177652991):  elapsed time:60.8 seconds
+
+rsort has **Core 00 Core_Total  Finished:   insts:691721      cycles:10134812   (101348110) seconds:52    -- 0.07 IPC (0.07 IPC) --  N/A  KHz (13.30 KHz)
+src/macsim.cc:620: (I=691721  C=101348111):  finalize simulation
+src/macsim.cc:624: (I=691721  C=101348111):  elapsed time:51.5 seconds
+
+spmv has **Core 00 Core_Total  Finished:   insts:253136      cycles:5352811    (53528100) seconds:21    -- 0.05 IPC (0.05 IPC) --  N/A  KHz (12.05 KHz)
+src/macsim.cc:620: (I=253136  C=53528101):  finalize simulation
+src/macsim.cc:624: (I=253136  C=53528101):  elapsed time:21.3 seconds
+
+st-matmul has **Core 00 Core_Total  Finished:   insts:256449      cycles:6073239    (60732380) seconds:23    -- 0.04 IPC (0.04 IPC) --  N/A  KHz (11.15 KHz)
+src/macsim.cc:620: (I=256449  C=60732381):  finalize simulation
+src/macsim.cc:624: (I=256449  C=60732381):  elapsed time:23.6 seconds
+
+st-vvadd has **Core 00 Core_Total  Finished:   insts:262630      cycles:6578255    (65782540) seconds:25    -- 0.04 IPC (0.04 IPC) --  N/A  KHz (10.51 KHz)
+src/macsim.cc:620: (I=262630  C=65782541):  finalize simulation
+src/macsim.cc:624: (I=262630  C=65782541):  elapsed time:25.4 seconds
+
+towers has **Core 00 Core_Total  Finished:   insts:161709      cycles:3780669    (37806680) seconds:15    -- 0.04 IPC (0.04 IPC) --  N/A  KHz (10.78 KHz)
+src/macsim.cc:620: (I=161709  C=37806681):  finalize simulation
+src/macsim.cc:624: (I=161709  C=37806681):  elapsed time:14.7 seconds
+
+vvadd has **Core 00 Core_Total  Finished:   insts:160408      cycles:3923494    (39234930) seconds:15    -- 0.04 IPC (0.04 IPC) --  N/A  KHz (10.69 KHz)
+src/macsim.cc:620: (I=160408  C=39234931):  finalize simulation
+src/macsim.cc:624: (I=160408  C=39234931):  elapsed time:15.0 seconds
+
+
+
+^^^^^
+rob_large_size 512
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+onto rob stuff
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+set trace file to mergesort
+
+
+rob_large_size 1
+large_core_schedule io
+~~~
+src/retire.cc:563: (I=415238  C=307578750):  ----- application 0 terminated (../tools/benchmarks/mergesort/BM.txt,0) at 307578750
+**Core 00 Core_Total  Finished:   insts:415239      cycles:30757876   (307578750) seconds:97    -- 0.01 IPC (0.01 IPC) --  N/A  KHz (4.28 KHz)
+src/macsim.cc:620: (I=415239  C=307578751):  finalize simulation
+src/macsim.cc:624: (I=415239  C=307578751):  elapsed time:98.0 seconds
+Done
+
+
+rob_large_size 1
+large_core_schedule ooo
+~~~
+src/retire.cc:563: (I=415238  C=307578750):  ----- application 0 terminated (../tools/benchmarks/mergesort/BM.txt,0) at 307578750
+**Core 00 Core_Total  Finished:   insts:415239      cycles:30757876   (307578750) seconds:99    -- 0.01 IPC (0.01 IPC) --  N/A  KHz (4.19 KHz)
+src/macsim.cc:620: (I=415239  C=307578751):  finalize simulation
+src/macsim.cc:624: (I=415239  C=307578751):  elapsed time:99.1 seconds
+Done
+
+
+rob_large_size 4
+large_core_schedule io
+~~~
+src/retire.cc:563: (I=415238  C=215941190):  ----- application 0 terminated (../tools/benchmarks/mergesort/BM.txt,0) at 215941190
+**Core 00 Core_Total  Finished:   insts:415239      cycles:21594120   (215941190) seconds:72    -- 0.02 IPC (0.02 IPC) --  N/A  KHz (5.77 KHz)
+src/macsim.cc:620: (I=415239  C=215941191):  finalize simulation
+src/macsim.cc:624: (I=415239  C=215941191):  elapsed time:72.1 seconds
+Done
+
+
+rob_large_size 4
+large_core_schedule ooo
+~~~
+src/retire.cc:563: (I=415238  C=189496540):  ----- application 0 terminated (../tools/benchmarks/mergesort/BM.txt,0) at 189496540
+**Core 00 Core_Total  Finished:   insts:415239      cycles:18949655   (189496540) seconds:65    -- 0.02 IPC (0.02 IPC) --  N/A  KHz (6.39 KHz)
+src/macsim.cc:620: (I=415239  C=189496541):  finalize simulation
+src/macsim.cc:624: (I=415239  C=189496541):  elapsed time:64.5 seconds
+Done
+
+
+rob_large_size 8
+large_core_schedule io
+~~~
+src/retire.cc:563: (I=415238  C=207752250):  ----- application 0 terminated (../tools/benchmarks/mergesort/BM.txt,0) at 207752250
+**Core 00 Core_Total  Finished:   insts:415239      cycles:20775226   (207752250) seconds:66    -- 0.02 IPC (0.02 IPC) --  N/A  KHz (6.29 KHz)
+src/macsim.cc:620: (I=415239  C=207752251):  finalize simulation
+src/macsim.cc:624: (I=415239  C=207752251):  elapsed time:65.5 seconds
+Done
+
+
+rob_large_size 8
+large_core_schedule ooo
+~~~
+src/retire.cc:563: (I=415238  C=142058730):  ----- application 0 terminated (../tools/benchmarks/mergesort/BM.txt,0) at 142058730
+**Core 00 Core_Total  Finished:   insts:415239      cycles:14205874   (142058730) seconds:50    -- 0.03 IPC (0.03 IPC) --  N/A  KHz (8.30 KHz)
+src/macsim.cc:620: (I=415239  C=142058731):  finalize simulation
+src/macsim.cc:624: (I=415239  C=142058731):  elapsed time:50.2 seconds
+Done
+
+
+rob_large_size 16
+large_core_schedule io
+~~~
+src/retire.cc:563: (I=415238  C=205712410):  ----- application 0 terminated (../tools/benchmarks/mergesort/BM.txt,0) at 205712410
+**Core 00 Core_Total  Finished:   insts:415239      cycles:20571242   (205712410) seconds:66    -- 0.02 IPC (0.02 IPC) --  N/A  KHz (6.29 KHz)
+src/macsim.cc:620: (I=415239  C=205712411):  finalize simulation
+src/macsim.cc:624: (I=415239  C=205712411):  elapsed time:66.1 seconds
+Done
+
+
+rob_large_size 16
+large_core_schedule ooo
+~~~
+src/retire.cc:563: (I=415238  C=124253150):  ----- application 0 terminated (../tools/benchmarks/mergesort/BM.txt,0) at 124253150
+**Core 00 Core_Total  Finished:   insts:415239      cycles:12425316   (124253150) seconds:43    -- 0.03 IPC (0.03 IPC) --  N/A  KHz (9.66 KHz)
+src/macsim.cc:620: (I=415239  C=124253151):  finalize simulation
+src/macsim.cc:624: (I=415239  C=124253151):  elapsed time:43.2 seconds
+Done
+
+
+rob_large_size 64
+large_core_schedule io
+~~~
+src/retire.cc:563: (I=415238  C=205590310):  ----- application 0 terminated (../tools/benchmarks/mergesort/BM.txt,0) at 205590310
+**Core 00 Core_Total  Finished:   insts:415239      cycles:20559032   (205590310) seconds:67    -- 0.02 IPC (0.02 IPC) --  N/A  KHz (6.20 KHz)
+src/macsim.cc:620: (I=415239  C=205590311):  finalize simulation
+src/macsim.cc:624: (I=415239  C=205590311):  elapsed time:66.3 seconds
+Done
+
+
+rob_large_size 64
+large_core_schedule ooo
+~~~
+src/retire.cc:563: (I=415238  C=122705010):  ----- application 0 terminated (../tools/benchmarks/mergesort/BM.txt,0) at 122705010
+**Core 00 Core_Total  Finished:   insts:415239      cycles:12270502   (122705010) seconds:44    -- 0.03 IPC (0.03 IPC) --  N/A  KHz (9.44 KHz)
+src/macsim.cc:620: (I=415239  C=122705011):  finalize simulation
+src/macsim.cc:624: (I=415239  C=122705011):  elapsed time:44.3 seconds
+Done
+
+
+rob_large_size 128
+large_core_schedule io
+~~~
+src/retire.cc:563: (I=415238  C=205589980):  ----- application 0 terminated (../tools/benchmarks/mergesort/BM.txt,0) at 205589980
+**Core 00 Core_Total  Finished:   insts:415239      cycles:20558999   (205589980) seconds:66    -- 0.02 IPC (0.02 IPC) --  N/A  KHz (6.29 KHz)
+src/macsim.cc:620: (I=415239  C=205589981):  finalize simulation
+src/macsim.cc:624: (I=415239  C=205589981):  elapsed time:66.1 seconds
+Done
+
+
+rob_large_size 128
+large_core_schedule ooo
+~~~
+src/retire.cc:563: (I=415238  C=122684880):  ----- application 0 terminated (../tools/benchmarks/mergesort/BM.txt,0) at 122684880
+**Core 00 Core_Total  Finished:   insts:415239      cycles:12268489   (122684880) seconds:46    -- 0.03 IPC (0.03 IPC) --  N/A  KHz (9.03 KHz)
+src/macsim.cc:620: (I=415239  C=122684881):  finalize simulation
+src/macsim.cc:624: (I=415239  C=122684881):  elapsed time:45.9 seconds
+Done
+
+
+rob_large_size 256
+large_core_schedule io
+~~~
+src/retire.cc:563: (I=415238  C=205589320):  ----- application 0 terminated (../tools/benchmarks/mergesort/BM.txt,0) at 205589320
+**Core 00 Core_Total  Finished:   insts:415239      cycles:20558933   (205589320) seconds:64    -- 0.02 IPC (0.02 IPC) --  N/A  KHz (6.49 KHz)
+src/macsim.cc:620: (I=415239  C=205589321):  finalize simulation
+src/macsim.cc:624: (I=415239  C=205589321):  elapsed time:63.1 seconds
+Done
+
+
+rob_large_size 256
+large_core_schedule ooo
+~~~
+src/retire.cc:563: (I=415238  C=122684990):  ----- application 0 terminated (../tools/benchmarks/mergesort/BM.txt,0) at 122684990
+**Core 00 Core_Total  Finished:   insts:415239      cycles:12268500   (122684990) seconds:43    -- 0.03 IPC (0.03 IPC) --  N/A  KHz (9.66 KHz)
+src/macsim.cc:620: (I=415239  C=122684991):  finalize simulation
+src/macsim.cc:624: (I=415239  C=122684991):  elapsed time:42.9 seconds
+Done
+
+
+rob_large_size 512
+large_core_schedule io
+~~~
+src/retire.cc:563: (I=415238  C=205587560):  ----- application 0 terminated (../tools/benchmarks/mergesort/BM.txt,0) at 205587560
+**Core 00 Core_Total  Finished:   insts:415239      cycles:20558757   (205587560) seconds:64    -- 0.02 IPC (0.02 IPC) --  N/A  KHz (6.49 KHz)
+src/macsim.cc:620: (I=415239  C=205587561):  finalize simulation
+src/macsim.cc:624: (I=415239  C=205587561):  elapsed time:64.6 seconds
+Done
+
+
+rob_large_size 512
+large_core_schedule ooo
+~~~
+src/retire.cc:563: (I=415238  C=122682570):  ----- application 0 terminated (../tools/benchmarks/mergesort/BM.txt,0) at 122682570
+**Core 00 Core_Total  Finished:   insts:415239      cycles:12268258   (122682570) seconds:43    -- 0.03 IPC (0.03 IPC) --  N/A  KHz (9.66 KHz)
+src/macsim.cc:620: (I=415239  C=122682571):  finalize simulation
+src/macsim.cc:624: (I=415239  C=122682571):  elapsed time:42.9 seconds
+Done

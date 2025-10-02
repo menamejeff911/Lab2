@@ -1,0 +1,131 @@
+nonperfect
+~~~
+enable_btb 1
+perfect_btb 0
+btb_entries 1024
+perfect_bp 1
+~~~
+src/retire.cc:563: (I=415238  C=23695230):  ----- application 0 terminated (../tools/benchmarks/mergesort/BM.txt,0) at 23695230
+**Core 00 Core_Total  Finished:   insts:415239      cycles:2369524    (23695230) seconds:11    -- 0.18 IPC (0.18 IPC) --  N/A  KHz (37.75 KHz)
+src/macsim.cc:620: (I=415239  C=23695231):  finalize simulation
+src/macsim.cc:624: (I=415239  C=23695231):  elapsed time:11.3 seconds
+Done
+
+
+
+
+diabled btb
+~~~~~
+enable_btb 0
+perfect_btb 0
+btb_entries 1024
+perfect_bp 1
+~~~~~~
+src/retire.cc:563: (I=415238  C=30701450):  ----- application 0 terminated (../tools/benchmarks/mergesort/BM.txt,0) at 30701450
+**Core 00 Core_Total  Finished:   insts:415239      cycles:3070146    (30701450) seconds:11    -- 0.14 IPC (0.14 IPC) --  N/A  KHz (37.75 KHz)
+src/macsim.cc:620: (I=415239  C=30701451):  finalize simulation
+src/macsim.cc:624: (I=415239  C=30701451):  elapsed time:11.3 seconds
+Done
+
+
+
+
+perfect
+~~~~~
+enable_btb 1
+perfect_btb 1
+btb_entries 1024
+perfect_bp 1
+~~~~
+src/retire.cc:563: (I=415238  C=23335710):  ----- application 0 terminated (../tools/benchmarks/mergesort/BM.txt,0) at 23335710
+**Core 00 Core_Total  Finished:   insts:415239      cycles:2333572    (23335710) seconds:11    -- 0.18 IPC (0.18 IPC) --  N/A  KHz (37.75 KHz)
+src/macsim.cc:620: (I=415239  C=23335711):  finalize simulation
+src/macsim.cc:624: (I=415239  C=23335711):  elapsed time:11.5 seconds
+Done
+
+
+~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~
+use above data for BTB_impact.csv
+~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~
+use Below data for sweep_btb_length.csv
+~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~
+and only use number after `cycles:` for execution time!!!!!
+~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~
+OKAY. now we fiddle w/ btb length
+enable_btb 1
+perfect_btb 0
+btb_entries 1024
+perfect_bp 1
+~~~
+src/retire.cc:563: (I=415238  C=23695230):  ----- application 0 terminated (../tools/benchmarks/mergesort/BM.txt,0) at 23695230
+**Core 00 Core_Total  Finished:   insts:415239      cycles:2369524    (23695230) seconds:10    -- 0.18 IPC (0.18 IPC) --  N/A  KHz (41.52 KHz)
+src/macsim.cc:620: (I=415239  C=23695231):  finalize simulation
+src/macsim.cc:624: (I=415239  C=23695231):  elapsed time:10.8 seconds
+Done
+
+
+btb_entries 2
+~~~
+src/retire.cc:563: (I=415238  C=24708750):  ----- application 0 terminated (../tools/benchmarks/mergesort/BM.txt,0) at 24708750
+**Core 00 Core_Total  Finished:   insts:415239      cycles:2470876    (24708750) seconds:11    -- 0.17 IPC (0.17 IPC) --  N/A  KHz (37.75 KHz)
+src/macsim.cc:620: (I=415239  C=24708751):  finalize simulation
+src/macsim.cc:624: (I=415239  C=24708751):  elapsed time:11.0 seconds
+Done
+
+
+btb_entries 4
+~~~
+src/retire.cc:563: (I=415238  C=24246990):  ----- application 0 terminated (../tools/benchmarks/mergesort/BM.txt,0) at 24246990
+**Core 00 Core_Total  Finished:   insts:415239      cycles:2424700    (24246990) seconds:11    -- 0.17 IPC (0.17 IPC) --  N/A  KHz (37.75 KHz)
+src/macsim.cc:620: (I=415239  C=24246991):  finalize simulation
+src/macsim.cc:624: (I=415239  C=24246991):  elapsed time:11.0 seconds
+Done
+
+
+btb_entries 8
+~~~
+src/retire.cc:563: (I=415238  C=23820150):  ----- application 0 terminated (../tools/benchmarks/mergesort/BM.txt,0) at 23820150
+**Core 00 Core_Total  Finished:   insts:415239      cycles:2382016    (23820150) seconds:11    -- 0.17 IPC (0.17 IPC) --  N/A  KHz (37.75 KHz)
+src/macsim.cc:620: (I=415239  C=23820151):  finalize simulation
+src/macsim.cc:624: (I=415239  C=23820151):  elapsed time:11.1 seconds
+Done
+
+
+btb_entries 16
+~~~
+src/retire.cc:563: (I=415238  C=23741670):  ----- application 0 terminated (../tools/benchmarks/mergesort/BM.txt,0) at 23741670
+**Core 00 Core_Total  Finished:   insts:415239      cycles:2374168    (23741670) seconds:11    -- 0.17 IPC (0.17 IPC) --  N/A  KHz (37.75 KHz)
+src/macsim.cc:620: (I=415239  C=23741671):  finalize simulation
+src/macsim.cc:624: (I=415239  C=23741671):  elapsed time:10.8 seconds
+Done
+
+
+btb_entries 32
+~~~
+src/retire.cc:563: (I=415238  C=23717190):  ----- application 0 terminated (../tools/benchmarks/mergesort/BM.txt,0) at 23717190
+**Core 00 Core_Total  Finished:   insts:415239      cycles:2371720    (23717190) seconds:11    -- 0.18 IPC (0.18 IPC) --  N/A  KHz (37.75 KHz)
+src/macsim.cc:620: (I=415239  C=23717191):  finalize simulation
+src/macsim.cc:624: (I=415239  C=23717191):  elapsed time:11.0 seconds
+Done
+
+
+btb_entries 64
+~~~
+src/retire.cc:563: (I=415238  C=23701830):  ----- application 0 terminated (../tools/benchmarks/mergesort/BM.txt,0) at 23701830
+**Core 00 Core_Total  Finished:   insts:415239      cycles:2370184    (23701830) seconds:11    -- 0.18 IPC (0.18 IPC) --  N/A  KHz (37.75 KHz)
+src/macsim.cc:620: (I=415239  C=23701831):  finalize simulation
+src/macsim.cc:624: (I=415239  C=23701831):  elapsed time:11.2 seconds
+Done
+
+
+btb_entries 128
+~~~
+src/retire.cc:563: (I=415238  C=23696310):  ----- application 0 terminated (../tools/benchmarks/mergesort/BM.txt,0) at 23696310
+**Core 00 Core_Total  Finished:   insts:415239      cycles:2369632    (23696310) seconds:11    -- 0.18 IPC (0.18 IPC) --  N/A  KHz (37.75 KHz)
+src/macsim.cc:620: (I=415239  C=23696311):  finalize simulation
+src/macsim.cc:624: (I=415239  C=23696311):  elapsed time:10.9 seconds
+Done
